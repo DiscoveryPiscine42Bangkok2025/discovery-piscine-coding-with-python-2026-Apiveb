@@ -12,16 +12,19 @@ zzz$
 '''
 
 def main():
-    word = (sys.argv)[1]
-    output = []
-    for i in word:
-        if i == "z":
-            output.append(i)
-        else:
-            pass
-    if output == []:
+    if len(sys.argv) != 2:
         print("none")
     else:
-        print("".join(output))
+        word = (sys.argv)[1]
+        output = []
+        for i in word:
+            if i == "z":
+                output.append(i)
+            else:
+                pass
+        if output == []:
+            print("none")
+        else:
+            print("".join(output))
 
 main()

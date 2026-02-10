@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 import sys
 import re
+'''
+./scan_it.py | cat -e
+none$
+./scan_it.py "the" | cat -e
+none$
+./scan_it.py "the" "the quick brown fox jumps over the lazy dog" | cat -e
+2$
+?>
+'''
 
 def main():
     if len(sys.argv) <= 2:

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#./play_with_arrays.py
+
 def main():
     origin = [2, 8, 9, 48, 8, 22, -12, 2]
     new_arr = []
